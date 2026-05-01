@@ -120,7 +120,7 @@ The space sector is infested with different types of UFOs, each with unique beha
 | Enemy Type | Color | Behavior |
 | :--- | :--- | :--- |
 | **Scout** | Blue | Erratic movement. Does not shoot, but physical collision drains points. |
-| **Gunner X** | Yellow | Fires high-speed horizontal lasers (X-axis). |
+| **Gunner X** | Green | Fires high-speed horizontal lasers (X-axis). |
 | **Destroyer Y** | Red | Dual vertical fire (Y-axis), shooting both up and down. |
 
 ---
