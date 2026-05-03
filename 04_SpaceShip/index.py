@@ -24,7 +24,7 @@ def main():
     Enemy.shoot_sound = enemy_laser_sound
 
     # Background
-    bg = pygame.image.load(get_file_path("space.jpg")).convert_alpha()
+    bg = pygame.image.load(get_file_path("space.jpg")).convert()
     bg = pygame.transform.scale(bg, (c.WIDTH, c.HEIGHT))
 
     # Groups and Sprites
