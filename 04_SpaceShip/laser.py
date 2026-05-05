@@ -13,7 +13,7 @@ class Laser(pygame.sprite.Sprite):
     def update(self):
         self.rect.y -= 10
 
-        if self.rect.y < 0:
+        if self.rect.bottom < 0:
             self.kill()
 
 
