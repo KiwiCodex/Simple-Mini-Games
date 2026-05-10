@@ -151,3 +151,63 @@ Make sure you have Python and Pygame installed:
 ```bash
 pip install pygame
 python index.py
+
+# 05 - Shooter Zombie 2D! 
+
+A side-scrolling survival game developed in **Python** using the **Pygame** library. Face off against hordes of zombies with different abilities, manage your highscore, and survive as long as possible.
+
+## Key Features
+
+- **Inheritance-Based Architecture:** Implementation of a `Zombie` base class with specialized subclasses (`ZombieSpeed` and `ZombieGiant`) that inherit and extend core behaviors.
+- **Combat Mechanics:** Bidirectional shooting with projectile logic and synchronized shotgun sound effects.
+- **Dynamic Graphics:** 
+  - **Colorize System:** Distinct enemy types identified via color filters (Blue for speed, Red for strength).
+  - **I-Frames:** Visual invulnerability effects (flickering/transparency) after taking damage.
+  - **Game Over UI:** Polished game over screen featuring a smooth blur effect trick.
+- **Interface & Persistence:**
+  - Persistent Highscore system saved via local files.
+  - Dynamic HUD showing remaining lives with icons and real-time score.
+- **Multichannel Audio:** Looping background music and dedicated sound channels for combat SFX.
+
+---
+
+## Project Structure
+
+The code is organized modularly for better maintenance and scalability:
+
+| File | Primary Function |
+| :--- | :--- |
+| **`index.py`** | Main entry point. Handles the Game Loop, collisions, and spawning system. |
+| **`player.py`** | Defines the `Player` class, movement controls, shooting, and health states. |
+| **`enemy.py`** | Enemy logic. Includes the base class and variants (Speed and Giant). |
+| **`shoot.py`** | `Bullet` class managing projectile movement and off-screen cleanup. |
+| **`functions.py`** | System utilities: OS path management, data saving, and image filters. |
+| **`constants.py`** | Global configuration (Colors, fonts, dimensions, and FPS). |
+
+---
+
+## Enemy Types
+
+Thanks to class inheritance, each zombie type possesses unique attributes:
+
+| Enemy | Color | HP | Speed | Points |
+| :--- | :--- | :--- | :--- | :--- |
+| **Normal Zombie** | Original | 2 | Medium | 10 |
+| **Speed Zombie** | 🔵 Blue | 1 | High | 25 |
+| **Giant Zombie** | 🔴 Red | 5 | Low (Scale x2) | 50 |
+
+---
+
+## How to Play
+
+### Controls
+- **Left / Right Arrows:** Move the hero.
+- **Spacebar:** Fire shotgun.
+- **R Key (Game Over):** Restart the game.
+- **Q Key (Game Over):** Quit the game.
+
+### Installation
+1. Ensure you have Python installed.
+2. Install the Pygame dependency:
+   ```bash
+   pip install pygame
