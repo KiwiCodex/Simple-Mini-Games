@@ -159,14 +159,14 @@ The space sector is infested with different types of UFOs, each with unique beha
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 Make sure you have Python and Pygame installed:
 ```bash
 pip install pygame
 python index.py
-
+```
 # 05 - Shooter Zombie 2D! 
 
 A side-scrolling survival game developed in **Python** using the **Pygame** library. Face off against hordes of zombies with different abilities, manage your highscore, and survive as long as possible.
