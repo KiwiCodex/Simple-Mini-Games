@@ -211,3 +211,40 @@ Thanks to class inheritance, each zombie type possesses unique attributes:
 2. Install the Pygame dependency:
    ```bash
    pip install pygame
+
+# 06 - Hangman Game - Pixel Edition
+
+Welcome to the **Hangman Game**! A modern web-based version of the classic word-guessing game, built with Vanilla JavaScript, HTML5 Canvas, and a progressive difficulty system designed to challenge your vocabulary.
+
+## Key Features
+
+*   **Progressive Difficulty:** The game tracks your win streak. As you win, it filters the word bank to provide longer and more complex terms (from a curated bank of 80+ words).
+*   **Streak System:** Includes a persistent win-streak counter that saves your progress using `localStorage`.
+*   **Canvas Graphics:** Real-time dynamic drawing of the hangman character using the HTML5 Canvas API.
+*   **Visual Feedback:** Features a "bounce" victory animation and automatic word revelation upon losing.
+*   **Retro Aesthetics:** Styled with the *Pixelify Sans* font for a classic 8-bit video game feel.
+
+## Tech Stack
+
+*   **HTML5:** Semantic structure.
+*   **CSS3:** Custom `@keyframes` animations, Flexbox, and responsive design.
+*   **JavaScript (ES6+):** DOM manipulation, keyboard event listeners, game logic, and data persistence.
+
+## How to Play
+
+1.  Click the **"Start Game"** button.
+2.  Use your physical keyboard to guess the hidden word.
+3.  **Correct Guess:** The letter appears in its corresponding position.
+4.  **Incorrect Guess:** A part of the hangman is drawn, and the letter is added to the "used letters" list.
+5.  **Winning:** Guess all letters before the body is fully drawn to increase your streak!
+6.  **Losing:** If the 6 body parts are completed, the game ends, your streak resets, and the secret word is revealed.
+
+## 📂 Project Structure
+
+```text
+├── index.html          # Main entry point
+├── css/
+│   └── styles.css      # Custom styles and animations
+└── js/
+    ├── words.js        # Word bank dictionary
+    └── script.js       # Main game engine logic
