@@ -1,3 +1,18 @@
+## 📘 Course Overview & Context
+
+This project is part of a hands-on journey through the **Practical Video Game Projects Course**, led by industry experts **Alvaro Chirou**, **Walter Coto**, and **Kevin Lopez**. 
+
+The curriculum explores the fundamentals of game logic and interactive design using diverse libraries and languages, including:
+*   **Python:** Mastering logic with `Turtle` and `Pygame`.
+*   **JavaScript:** Building web-based experiences and DOM manipulation.
+
+### 💡 My Approach: Beyond Replication
+
+While the core of these projects follows the course curriculum, I have treated each one as a foundation for further experimentation. My goal was not just to replicate the source code but to **architect meaningful improvements** and implement custom features that pushed my technical boundaries.
+
+Through this "Learning by Enhancing" philosophy, I evolved through the following milestones
+
+
 # 01 - Turtle Graphics Sandbox
 
 A simple experimentation script created to explore the basic capabilities of the **Python Turtle** library.
